@@ -3,6 +3,7 @@ import 'package:recipe/screens/categories_screen.dart';
 import 'package:recipe/utils/app_routes.dart';
 import 'screens/categories_meals_screen.dart';
 import 'utils/app_routes.dart';
+import 'screens/meal_detail_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -35,6 +36,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         AppRoutes.Home: (ctx) => CategoriesScreen(),
         AppRoutes.CATEGORY_MEALS: (ctx) => CategoriesMealsScreen(),
+        AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
       },
     );
   }
