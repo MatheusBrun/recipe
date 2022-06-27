@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:recipe/screens/categories_screen.dart';
+import 'package:recipe/utils/app_routes.dart';
+import 'screens/categories_meals_screen.dart';
+import 'utils/app_routes.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,7 +32,10 @@ class _MyAppState extends State<MyApp> {
                 fontSize: 16,
                 color: Colors.black),
           )),
-      home: CategoriesScreen(),
+      routes: {
+        AppRoutes.Home: (ctx) => CategoriesScreen(),
+        AppRoutes.CATEGORY_MEALS: (ctx) => CategoriesMealsScreen(),
+      },
     );
   }
 }
